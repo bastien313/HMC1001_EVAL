@@ -234,7 +234,7 @@ F 3 "" H 5350 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1450 5350 1325
+	5350 1450 5350 1425
 $Comp
 L power:+5V #PWR?
 U 1 1 5CB128A6
@@ -1535,4 +1535,22 @@ F 3 "" H 2750 2725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 2725 2750 2675
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB304D9
+P 5800 1350
+F 0 "TP?" H 5775 1550 50  0000 L CNN
+F 1 "TestPoint" H 5675 1600 50  0001 L CNN
+F 2 "" H 6000 1350 50  0001 C CNN
+F 3 "~" H 6000 1350 50  0001 C CNN
+	1    5800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1350 5800 1425
+Wire Wire Line
+	5800 1425 5350 1425
+Connection ~ 5350 1425
+Wire Wire Line
+	5350 1425 5350 1325
 $EndSCHEMATC
