@@ -1,0 +1,1031 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HMC_EVAL"
+Date "2019-04-13"
+Rev "1"
+Comp "BsElectronics"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Magnetic:HMC1001 U?
+U 1 1 5CB118A4
+P 4175 2775
+F 0 "U?" H 4175 3440 50  0000 C CNN
+F 1 "HMC1001" H 4175 3349 50  0000 C CNN
+F 2 "MyLibKicad:HCM1001" H 3475 3050 50  0001 C CNN
+F 3 "" H 3475 3050 50  0001 C CNN
+	1    4175 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5CB11AF5
+P 1125 1350
+F 0 "J?" H 1045 1667 50  0000 C CNN
+F 1 "Conn_01x03" H 1045 1576 50  0000 C CNN
+F 2 "" H 1125 1350 50  0001 C CNN
+F 3 "~" H 1125 1350 50  0001 C CNN
+	1    1125 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB11C2A
+P 1625 1100
+F 0 "#PWR?" H 1625 950 50  0001 C CNN
+F 1 "+12V" H 1640 1273 50  0000 C CNN
+F 2 "" H 1625 1100 50  0001 C CNN
+F 3 "" H 1625 1100 50  0001 C CNN
+	1    1625 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 1100 1625 1250
+Wire Wire Line
+	1625 1250 1325 1250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB11C73
+P 1825 1625
+F 0 "#PWR?" H 1825 1375 50  0001 C CNN
+F 1 "GNDA" H 1830 1452 50  0000 C CNN
+F 2 "" H 1825 1625 50  0001 C CNN
+F 3 "" H 1825 1625 50  0001 C CNN
+	1    1825 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 1625 1825 1350
+$Comp
+L power:-12V #PWR?
+U 1 1 5CB11CC2
+P 1625 1625
+F 0 "#PWR?" H 1625 1725 50  0001 C CNN
+F 1 "-12V" H 1640 1798 50  0000 C CNN
+F 2 "" H 1625 1625 50  0001 C CNN
+F 3 "" H 1625 1625 50  0001 C CNN
+	1    1625 1625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 1625 1625 1450
+Wire Wire Line
+	1625 1450 1325 1450
+Wire Wire Line
+	1325 1350 1825 1350
+$Comp
+L Device:CP1 C?
+U 1 1 5CB11DAF
+P 2300 1150
+F 0 "C?" H 2415 1196 50  0000 L CNN
+F 1 "100uF 25V" H 2050 1050 50  0000 L CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "~" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB11F57
+P 2300 950
+F 0 "#PWR?" H 2300 800 50  0001 C CNN
+F 1 "+12V" H 2315 1123 50  0000 C CNN
+F 2 "" H 2300 950 50  0001 C CNN
+F 3 "" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1000 2300 950 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB11F92
+P 2300 1350
+F 0 "#PWR?" H 2300 1100 50  0001 C CNN
+F 1 "GNDA" H 2305 1177 50  0000 C CNN
+F 2 "" H 2300 1350 50  0001 C CNN
+F 3 "" H 2300 1350 50  0001 C CNN
+	1    2300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1350 2300 1300
+$Comp
+L Device:CP1 C?
+U 1 1 5CB11FD9
+P 2750 1175
+F 0 "C?" H 2635 1129 50  0000 R CNN
+F 1 "100uF 25V" H 3000 1350 50  0000 R CNN
+F 2 "" H 2750 1175 50  0001 C CNN
+F 3 "~" H 2750 1175 50  0001 C CNN
+	1    2750 1175
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CB12043
+P 2750 950
+F 0 "#PWR?" H 2750 1050 50  0001 C CNN
+F 1 "-12V" H 2765 1123 50  0000 C CNN
+F 2 "" H 2750 950 50  0001 C CNN
+F 3 "" H 2750 950 50  0001 C CNN
+	1    2750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 950  2750 1025
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB120A6
+P 2750 1375
+F 0 "#PWR?" H 2750 1125 50  0001 C CNN
+F 1 "GNDA" H 2755 1202 50  0000 C CNN
+F 2 "" H 2750 1375 50  0001 C CNN
+F 3 "" H 2750 1375 50  0001 C CNN
+	1    2750 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1375 2750 1325
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5CB121BA
+P 4225 875
+F 0 "U?" H 4225 1117 50  0000 C CNN
+F 1 "L7805" H 4225 1026 50  0000 C CNN
+F 2 "" H 4250 725 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4225 825 50  0001 C CNN
+	1    4225 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12233
+P 3800 1100
+F 0 "C?" H 3550 1175 50  0000 L CNN
+F 1 "470nF" H 3550 1000 50  0000 L CNN
+F 2 "" H 3838 950 50  0001 C CNN
+F 3 "~" H 3800 1100 50  0001 C CNN
+	1    3800 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 875  3800 875 
+Wire Wire Line
+	3800 875  3800 950 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB12332
+P 3800 1375
+F 0 "#PWR?" H 3800 1125 50  0001 C CNN
+F 1 "GNDA" H 3805 1202 50  0000 C CNN
+F 2 "" H 3800 1375 50  0001 C CNN
+F 3 "" H 3800 1375 50  0001 C CNN
+	1    3800 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1375 3800 1250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB12404
+P 4225 1375
+F 0 "#PWR?" H 4225 1125 50  0001 C CNN
+F 1 "GNDA" H 4230 1202 50  0000 C CNN
+F 2 "" H 4225 1375 50  0001 C CNN
+F 3 "" H 4225 1375 50  0001 C CNN
+	1    4225 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 1375 4225 1175
+$Comp
+L Device:C C?
+U 1 1 5CB124CE
+P 4625 1100
+F 0 "C?" H 4700 1200 50  0000 L CNN
+F 1 "100nF" H 4675 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4663 950 50  0001 C CNN
+F 3 "~" H 4625 1100 50  0001 C CNN
+	1    4625 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 950  4625 875 
+Wire Wire Line
+	4625 875  4525 875 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB125EF
+P 4625 1375
+F 0 "#PWR?" H 4625 1125 50  0001 C CNN
+F 1 "GNDA" H 4630 1202 50  0000 C CNN
+F 2 "" H 4625 1375 50  0001 C CNN
+F 3 "" H 4625 1375 50  0001 C CNN
+	1    4625 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 1375 4625 1250
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB128A6
+P 4625 725
+F 0 "#PWR?" H 4625 575 50  0001 C CNN
+F 1 "+5V" H 4640 898 50  0000 C CNN
+F 2 "" H 4625 725 50  0001 C CNN
+F 3 "" H 4625 725 50  0001 C CNN
+	1    4625 725 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 725  4625 875 
+Connection ~ 4625 875 
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB12A29
+P 3800 775
+F 0 "#PWR?" H 3800 625 50  0001 C CNN
+F 1 "+12V" H 3815 948 50  0000 C CNN
+F 2 "" H 3800 775 50  0001 C CNN
+F 3 "" H 3800 775 50  0001 C CNN
+	1    3800 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 775  3800 875 
+Connection ~ 3800 875 
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB12BE8
+P 3500 2600
+F 0 "#PWR?" H 3500 2450 50  0001 C CNN
+F 1 "+5V" H 3500 2750 50  0000 C CNN
+F 2 "" H 3500 2600 50  0001 C CNN
+F 3 "" H 3500 2600 50  0001 C CNN
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 2675 3500 2675
+Wire Wire Line
+	3500 2675 3500 2600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB12DE3
+P 3000 2925
+F 0 "#PWR?" H 3000 2675 50  0001 C CNN
+F 1 "GNDA" H 3005 2752 50  0000 C CNN
+F 2 "" H 3000 2925 50  0001 C CNN
+F 3 "" H 3000 2925 50  0001 C CNN
+	1    3000 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB1305A
+P 3200 2675
+F 0 "C?" H 3075 2800 50  0000 L CNN
+F 1 "100nF" V 3075 2475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3238 2525 50  0001 C CNN
+F 3 "~" H 3200 2675 50  0001 C CNN
+	1    3200 2675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2825 3000 2925
+Wire Wire Line
+	3000 2825 3775 2825
+Wire Wire Line
+	3000 2825 3000 2675
+Wire Wire Line
+	3000 2675 3050 2675
+Connection ~ 3000 2825
+Wire Wire Line
+	3350 2675 3500 2675
+Connection ~ 3500 2675
+$Comp
+L Device:R R?
+U 1 1 5CB13DDA
+P 5550 2750
+F 0 "R?" V 5550 2750 50  0000 C CNN
+F 1 "R" V 5434 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5480 2750 50  0001 C CNN
+F 3 "~" H 5550 2750 50  0001 C CNN
+	1    5550 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB14C7A
+P 4675 2550
+F 0 "TP?" H 4650 2750 50  0000 L CNN
+F 1 "TestPoint" H 4550 2800 50  0001 L CNN
+F 2 "" H 4875 2550 50  0001 C CNN
+F 3 "~" H 4875 2550 50  0001 C CNN
+	1    4675 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB14E3D
+P 4675 2925
+F 0 "TP?" H 4650 3125 50  0000 L CNN
+F 1 "TestPoint" H 4550 3175 50  0001 L CNN
+F 2 "" H 4875 2925 50  0001 C CNN
+F 3 "~" H 4875 2925 50  0001 C CNN
+	1    4675 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB1680A
+P 5775 2550
+F 0 "R?" V 5775 2550 50  0000 C CNN
+F 1 "R" V 5659 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5705 2550 50  0001 C CNN
+F 3 "~" H 5775 2550 50  0001 C CNN
+	1    5775 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB168D2
+P 5150 2675
+F 0 "C?" H 5025 2800 50  0000 L CNN
+F 1 "TBD" V 5025 2475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5188 2525 50  0001 C CNN
+F 3 "~" H 5150 2675 50  0001 C CNN
+	1    5150 2675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB16F5F
+P 5050 2825
+F 0 "C?" H 4925 2950 50  0000 L CNN
+F 1 "TBD" V 4925 2625 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5088 2675 50  0001 C CNN
+F 3 "~" H 5050 2825 50  0001 C CNN
+	1    5050 2825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB171E9
+P 5775 2950
+F 0 "R?" V 5775 2950 50  0000 C CNN
+F 1 "R" V 5659 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5705 2950 50  0001 C CNN
+F 3 "~" H 5775 2950 50  0001 C CNN
+	1    5775 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB17283
+P 6025 2750
+F 0 "C?" H 5900 2875 50  0000 L CNN
+F 1 "TBD" V 5850 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6063 2600 50  0001 C CNN
+F 3 "~" H 6025 2750 50  0001 C CNN
+	1    6025 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2675 4675 2675
+Wire Wire Line
+	4575 2825 4675 2825
+Wire Wire Line
+	5200 2825 5350 2825
+Wire Wire Line
+	5350 2825 5350 2950
+Wire Wire Line
+	5350 2950 5550 2950
+Wire Wire Line
+	5550 2900 5550 2950
+Connection ~ 5550 2950
+Wire Wire Line
+	5550 2950 5625 2950
+Wire Wire Line
+	5625 2550 5550 2550
+Wire Wire Line
+	5350 2550 5350 2675
+Wire Wire Line
+	5350 2675 5300 2675
+Wire Wire Line
+	5550 2600 5550 2550
+Connection ~ 5550 2550
+Wire Wire Line
+	5550 2550 5350 2550
+Wire Wire Line
+	6025 2600 6025 2550
+Wire Wire Line
+	6025 2550 5925 2550
+Wire Wire Line
+	6025 2900 6025 2950
+Wire Wire Line
+	6025 2950 5925 2950
+$Comp
+L Device:R R?
+U 1 1 5CB1942B
+P 5550 2350
+F 0 "R?" V 5550 2350 50  0000 C CNN
+F 1 "R" V 5434 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5480 2350 50  0001 C CNN
+F 3 "~" H 5550 2350 50  0001 C CNN
+	1    5550 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB194E3
+P 5550 3150
+F 0 "R?" V 5550 3150 50  0000 C CNN
+F 1 "R" V 5434 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5480 3150 50  0001 C CNN
+F 3 "~" H 5550 3150 50  0001 C CNN
+	1    5550 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB1954E
+P 6025 2350
+F 0 "C?" H 5900 2475 50  0000 L CNN
+F 1 "TBD" V 5850 2250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6063 2200 50  0001 C CNN
+F 3 "~" H 6025 2350 50  0001 C CNN
+	1    6025 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB19598
+P 6025 3150
+F 0 "C?" H 5900 3275 50  0000 L CNN
+F 1 "TBD" V 5850 3050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6063 3000 50  0001 C CNN
+F 3 "~" H 6025 3150 50  0001 C CNN
+	1    6025 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6025 3000 6025 2950
+Connection ~ 6025 2950
+Wire Wire Line
+	6025 2500 6025 2550
+Connection ~ 6025 2550
+Wire Wire Line
+	5550 3000 5550 2950
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB1A9ED
+P 5550 3350
+F 0 "#PWR?" H 5550 3100 50  0001 C CNN
+F 1 "GNDA" H 5555 3177 50  0000 C CNN
+F 2 "" H 5550 3350 50  0001 C CNN
+F 3 "" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3350 5550 3300
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB1B122
+P 6025 3350
+F 0 "#PWR?" H 6025 3100 50  0001 C CNN
+F 1 "GNDA" H 6030 3177 50  0000 C CNN
+F 2 "" H 6025 3350 50  0001 C CNN
+F 3 "" H 6025 3350 50  0001 C CNN
+	1    6025 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 3350 6025 3300
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB1B87E
+P 5550 2150
+F 0 "#PWR?" H 5550 1900 50  0001 C CNN
+F 1 "GNDA" H 5555 1977 50  0000 C CNN
+F 2 "" H 5550 2150 50  0001 C CNN
+F 3 "" H 5550 2150 50  0001 C CNN
+	1    5550 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 2200 5550 2150
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB1C145
+P 6025 2150
+F 0 "#PWR?" H 6025 1900 50  0001 C CNN
+F 1 "GNDA" H 6030 1977 50  0000 C CNN
+F 2 "" H 6025 2150 50  0001 C CNN
+F 3 "" H 6025 2150 50  0001 C CNN
+	1    6025 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6025 2200 6025 2150
+Wire Wire Line
+	7000 2550 6400 2550
+Wire Wire Line
+	6025 2950 6400 2950
+Wire Wire Line
+	5550 2550 5550 2500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB1F570
+P 5350 2475
+F 0 "TP?" H 5325 2675 50  0000 L CNN
+F 1 "TestPoint" H 5225 2725 50  0001 L CNN
+F 2 "" H 5550 2475 50  0001 C CNN
+F 3 "~" H 5550 2475 50  0001 C CNN
+	1    5350 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB1F7A2
+P 5350 3000
+F 0 "TP?" H 5325 3200 50  0000 L CNN
+F 1 "TestPoint" H 5225 3250 50  0001 L CNN
+F 2 "" H 5550 3000 50  0001 C CNN
+F 3 "~" H 5550 3000 50  0001 C CNN
+	1    5350 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB1F808
+P 6400 3000
+F 0 "TP?" H 6375 3200 50  0000 L CNN
+F 1 "TestPoint" H 6275 3250 50  0001 L CNN
+F 2 "" H 6600 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6400 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB1F8B0
+P 6400 2500
+F 0 "TP?" H 6375 2700 50  0000 L CNN
+F 1 "TestPoint" H 6275 2750 50  0001 L CNN
+F 2 "" H 6600 2500 50  0001 C CNN
+F 3 "~" H 6600 2500 50  0001 C CNN
+	1    6400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2500 6400 2550
+Connection ~ 6400 2550
+Wire Wire Line
+	6400 2550 6025 2550
+Wire Wire Line
+	6400 3000 6400 2950
+Connection ~ 6400 2950
+Wire Wire Line
+	6400 2950 7000 2950
+Wire Wire Line
+	5350 3000 5350 2950
+Connection ~ 5350 2950
+Wire Wire Line
+	5350 2475 5350 2550
+Connection ~ 5350 2550
+Wire Wire Line
+	4675 2550 4675 2675
+Connection ~ 4675 2675
+Wire Wire Line
+	4675 2675 4575 2675
+Wire Wire Line
+	4675 2925 4675 2825
+Connection ~ 4675 2825
+Wire Wire Line
+	4675 2825 4900 2825
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CB23C57
+P 7825 2675
+F 0 "TP?" H 7800 2875 50  0000 L CNN
+F 1 "TestPoint" H 7700 2925 50  0001 L CNN
+F 2 "" H 8025 2675 50  0001 C CNN
+F 3 "~" H 8025 2675 50  0001 C CNN
+	1    7825 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7825 2675 7825 2750
+Wire Wire Line
+	7825 2750 7700 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB25A0C
+P 7300 2200
+F 0 "#PWR?" H 7300 2050 50  0001 C CNN
+F 1 "+12V" H 7315 2373 50  0000 C CNN
+F 2 "" H 7300 2200 50  0001 C CNN
+F 3 "" H 7300 2200 50  0001 C CNN
+	1    7300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB25AB3
+P 7500 2325
+F 0 "C?" H 7575 2425 50  0000 L CNN
+F 1 "100nF" H 7550 2225 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7538 2175 50  0001 C CNN
+F 3 "~" H 7500 2325 50  0001 C CNN
+	1    7500 2325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB25C58
+P 7675 2350
+F 0 "#PWR?" H 7675 2100 50  0001 C CNN
+F 1 "GNDA" H 7680 2177 50  0000 C CNN
+F 2 "" H 7675 2350 50  0001 C CNN
+F 3 "" H 7675 2350 50  0001 C CNN
+	1    7675 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 2350 7675 2325
+Wire Wire Line
+	7675 2325 7650 2325
+Wire Wire Line
+	7350 2325 7300 2325
+Wire Wire Line
+	7300 2325 7300 2200
+Wire Wire Line
+	7300 2325 7300 2450
+Connection ~ 7300 2325
+$Comp
+L power:-12V #PWR?
+U 1 1 5CB28D6B
+P 7300 3275
+F 0 "#PWR?" H 7300 3375 50  0001 C CNN
+F 1 "-12V" H 7315 3448 50  0000 C CNN
+F 2 "" H 7300 3275 50  0001 C CNN
+F 3 "" H 7300 3275 50  0001 C CNN
+	1    7300 3275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 3275 7300 3175
+$Comp
+L Device:C C?
+U 1 1 5CB29F77
+P 7025 3175
+F 0 "C?" V 7100 3300 50  0000 L CNN
+F 1 "100nF" V 6875 3075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7063 3025 50  0001 C CNN
+F 3 "~" H 7025 3175 50  0001 C CNN
+	1    7025 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB2A0D1
+P 6825 3250
+F 0 "#PWR?" H 6825 3000 50  0001 C CNN
+F 1 "GNDA" H 6830 3077 50  0000 C CNN
+F 2 "" H 6825 3250 50  0001 C CNN
+F 3 "" H 6825 3250 50  0001 C CNN
+	1    6825 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 3250 6825 3175
+Wire Wire Line
+	6825 3175 6875 3175
+Wire Wire Line
+	7175 3175 7300 3175
+Connection ~ 7300 3175
+Wire Wire Line
+	7300 3175 7300 3050
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5CB2D9FA
+P 6525 5375
+F 0 "JP?" V 6479 5476 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 6570 5476 50  0000 L CNN
+F 2 "" H 6525 5375 50  0001 C CNN
+F 3 "~" H 6525 5375 50  0001 C CNN
+	1    6525 5375
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB2EFC4
+P 6525 5675
+F 0 "#PWR?" H 6525 5425 50  0001 C CNN
+F 1 "GNDA" H 6530 5502 50  0000 C CNN
+F 2 "" H 6525 5675 50  0001 C CNN
+F 3 "" H 6525 5675 50  0001 C CNN
+	1    6525 5675
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 5675 6525 5625
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 1 1 5CB305E2
+P 5200 4875
+F 0 "U1" H 5200 5242 50  0000 C CNN
+F 1 "OPA2209" H 5350 5075 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5200 4875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 5200 4875 50  0001 C CNN
+F 4 "Farnell: 1862577" H 5200 4875 50  0001 C CNN "supplier"
+	1    5200 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 2 1 5CB30703
+P 5200 6250
+F 0 "U1" H 4975 6550 50  0000 C CNN
+F 1 "OPA2209" H 4900 6700 50  0000 C CNN
+F 2 "" H 5200 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 5200 6250 50  0001 C CNN
+	2    5200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 3 1 5CB308CD
+P 5000 6250
+F 0 "U1" H 4950 6625 50  0000 L CNN
+F 1 "OPA2134" H 4958 6205 50  0001 L CNN
+F 2 "" H 5000 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 5000 6250 50  0001 C CNN
+	3    5000 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4875 5650 4875
+Wire Wire Line
+	6525 4875 6525 5125
+Wire Wire Line
+	5650 4875 5650 5200
+Wire Wire Line
+	5650 5200 4800 5200
+Wire Wire Line
+	4800 5200 4800 4975
+Wire Wire Line
+	4800 4975 4900 4975
+Connection ~ 5650 4875
+Wire Wire Line
+	5650 4875 6525 4875
+$Comp
+L Device:R R?
+U 1 1 5CB35103
+P 4350 4600
+F 0 "R?" V 4350 4600 50  0000 C CNN
+F 1 "R" V 4450 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4280 4600 50  0001 C CNN
+F 3 "~" H 4350 4600 50  0001 C CNN
+	1    4350 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB35337
+P 4350 4950
+F 0 "R?" V 4350 4950 50  0000 C CNN
+F 1 "R" V 4450 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4280 4950 50  0001 C CNN
+F 3 "~" H 4350 4950 50  0001 C CNN
+	1    4350 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB36BBF
+P 4625 4950
+F 0 "C?" H 4500 5075 50  0000 L CNN
+F 1 "100nF" V 4450 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4663 4800 50  0001 C CNN
+F 3 "~" H 4625 4950 50  0001 C CNN
+	1    4625 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB3CD97
+P 4475 5225
+F 0 "#PWR?" H 4475 4975 50  0001 C CNN
+F 1 "GNDA" H 4475 5100 50  0000 C CNN
+F 2 "" H 4475 5225 50  0001 C CNN
+F 3 "" H 4475 5225 50  0001 C CNN
+	1    4475 5225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 5100 4625 5175
+Wire Wire Line
+	4625 5175 4475 5175
+Wire Wire Line
+	4475 5175 4475 5225
+Wire Wire Line
+	4475 5175 4350 5175
+Wire Wire Line
+	4350 5175 4350 5100
+Connection ~ 4475 5175
+Wire Wire Line
+	4350 4750 4350 4775
+Wire Wire Line
+	4350 4775 4625 4775
+Connection ~ 4350 4775
+Wire Wire Line
+	4350 4775 4350 4800
+Wire Wire Line
+	4625 4800 4625 4775
+Connection ~ 4625 4775
+Wire Wire Line
+	4625 4775 4900 4775
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB452B0
+P 4350 4375
+F 0 "#PWR?" H 4350 4225 50  0001 C CNN
+F 1 "+5V" H 4365 4548 50  0000 C CNN
+F 2 "" H 4350 4375 50  0001 C CNN
+F 3 "" H 4350 4375 50  0001 C CNN
+	1    4350 4375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4375 4350 4450
+$Comp
+L power:+12V #PWR?
+U 1 1 5CB47623
+P 5100 5700
+F 0 "#PWR?" H 5100 5550 50  0001 C CNN
+F 1 "+12V" H 5115 5873 50  0000 C CNN
+F 2 "" H 5100 5700 50  0001 C CNN
+F 3 "" H 5100 5700 50  0001 C CNN
+	1    5100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB47629
+P 5300 5825
+F 0 "C?" H 5375 5925 50  0000 L CNN
+F 1 "100nF" V 5350 5525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5338 5675 50  0001 C CNN
+F 3 "~" H 5300 5825 50  0001 C CNN
+	1    5300 5825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB4762F
+P 5475 5850
+F 0 "#PWR?" H 5475 5600 50  0001 C CNN
+F 1 "GNDA" H 5480 5677 50  0000 C CNN
+F 2 "" H 5475 5850 50  0001 C CNN
+F 3 "" H 5475 5850 50  0001 C CNN
+	1    5475 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 5850 5475 5825
+Wire Wire Line
+	5475 5825 5450 5825
+Wire Wire Line
+	5150 5825 5100 5825
+Wire Wire Line
+	5100 5825 5100 5700
+Wire Wire Line
+	5100 5825 5100 5950
+Connection ~ 5100 5825
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB49B8F
+P 4775 6425
+F 0 "#PWR?" H 4775 6175 50  0001 C CNN
+F 1 "GNDA" H 4675 6425 50  0000 C CNN
+F 2 "" H 4775 6425 50  0001 C CNN
+F 3 "" H 4775 6425 50  0001 C CNN
+	1    4775 6425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 6425 4775 6350
+Wire Wire Line
+	4775 6150 4900 6150
+Wire Wire Line
+	4900 6350 4775 6350
+Connection ~ 4775 6350
+Wire Wire Line
+	4775 6350 4775 6150
+$Comp
+L power:-12V #PWR?
+U 1 1 5CB4E3C4
+P 5100 6775
+F 0 "#PWR?" H 5100 6875 50  0001 C CNN
+F 1 "-12V" H 5115 6948 50  0000 C CNN
+F 2 "" H 5100 6775 50  0001 C CNN
+F 3 "" H 5100 6775 50  0001 C CNN
+	1    5100 6775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 6775 5100 6675
+$Comp
+L Device:C C?
+U 1 1 5CB4E3CB
+P 4825 6675
+F 0 "C?" V 4875 6750 50  0000 L CNN
+F 1 "100nF" V 4675 6575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4863 6525 50  0001 C CNN
+F 3 "~" H 4825 6675 50  0001 C CNN
+	1    4825 6675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB4E3D1
+P 4625 6750
+F 0 "#PWR?" H 4625 6500 50  0001 C CNN
+F 1 "GNDA" H 4630 6577 50  0000 C CNN
+F 2 "" H 4625 6750 50  0001 C CNN
+F 3 "" H 4625 6750 50  0001 C CNN
+	1    4625 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 6750 4625 6675
+Wire Wire Line
+	4625 6675 4675 6675
+Wire Wire Line
+	4975 6675 5100 6675
+Connection ~ 5100 6675
+Wire Wire Line
+	5100 6550 5100 6675
+Wire Wire Line
+	7400 3050 7400 3175
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5CB5DBBA
+P 8575 2850
+F 0 "J?" H 8655 2892 50  0000 L CNN
+F 1 "Conn_01x03" H 8350 3100 50  0000 L CNN
+F 2 "" H 8575 2850 50  0001 C CNN
+F 3 "~" H 8575 2850 50  0001 C CNN
+	1    8575 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 2750 7825 2750
+Connection ~ 7825 2750
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CB67BB3
+P 8175 2850
+F 0 "#PWR?" H 8175 2600 50  0001 C CNN
+F 1 "GNDA" V 8180 2723 50  0000 R CNN
+F 2 "" H 8175 2850 50  0001 C CNN
+F 3 "" H 8175 2850 50  0001 C CNN
+	1    8175 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8175 2850 8375 2850
+Wire Wire Line
+	7400 3175 7400 5375
+Connection ~ 7400 3175
+Wire Wire Line
+	6625 5375 7400 5375
+$Comp
+L Amplifier_Instrumentation:INA128 U?
+U 1 1 5CB11A08
+P 7300 2750
+F 0 "U?" H 7450 2950 50  0000 L CNN
+F 1 "INA128" H 7500 2625 50  0000 L CNN
+F 2 "" H 7400 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina128.pdf" H 7400 2750 50  0001 C CNN
+	1    7300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3175 8050 2950
+Wire Wire Line
+	8050 2950 8375 2950
+Wire Wire Line
+	7400 3175 8050 3175
+$EndSCHEMATC
