@@ -492,7 +492,7 @@ Wire Wire Line
 	4550 3475 4550 3375
 Connection ~ 4550 3375
 Wire Wire Line
-	4550 3375 4775 3375
+	4550 3375 4575 3375
 $Comp
 L Connector:TestPoint TP8
 U 1 1 5CB23C57
@@ -1469,4 +1469,7 @@ Wire Wire Line
 	5075 5325 4725 5325
 Wire Wire Line
 	4725 5325 4725 5375
+Connection ~ 4575 3375
+Wire Wire Line
+	4575 3375 4775 3375
 $EndSCHEMATC

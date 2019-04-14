@@ -1121,7 +1121,7 @@ U 1 1 5CBC5805
 P 1425 3900
 F 0 "Q1" H 1616 3946 50  0000 L CNN
 F 1 "IRF7319IPBF" H 975 4100 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1625 3825 50  0001 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1625 3825 50  0001 L CNN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 1425 3900 50  0001 L CNN
 	1    1425 3900
 	1    0    0    -1  
@@ -1132,7 +1132,7 @@ U 2 1 5CBC58D2
 P 1425 3150
 F 0 "Q1" H 1616 3196 50  0000 L CNN
 F 1 "IRF7319IPBF" H 1000 2975 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1625 3075 50  0001 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1625 3075 50  0001 L CNN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 1425 3150 50  0001 L CNN
 	2    1425 3150
 	1    0    0    1   
@@ -1469,4 +1469,15 @@ Wire Wire Line
 	5075 5325 4725 5325
 Wire Wire Line
 	4725 5325 4725 5375
+$Comp
+L Sensor_Magnetic:HMC1001 U?
+U 1 1 5CB59FE6
+P 3550 4825
+F 0 "U?" H 3550 5490 50  0000 C CNN
+F 1 "HMC1001" H 3550 5399 50  0000 C CNN
+F 2 "" H 2850 5100 50  0001 C CNN
+F 3 "" H 2850 5100 50  0001 C CNN
+	1    3550 4825
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
