@@ -191,28 +191,6 @@ F 3 "~" H 5425 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5CB14C7A
-P 4550 3100
-F 0 "TP1" H 4525 3300 50  0000 L CNN
-F 1 "TestPoint" H 4425 3350 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 4750 3100 50  0001 C CNN
-F 3 "~" H 4750 3100 50  0001 C CNN
-	1    4550 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5CB14E3D
-P 4550 3475
-F 0 "TP2" H 4525 3675 50  0000 L CNN
-F 1 "TestPoint" H 4425 3725 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 4750 3475 50  0001 C CNN
-F 3 "~" H 4750 3475 50  0001 C CNN
-	1    4550 3475
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 5CB1680A
 P 5650 3100
@@ -267,10 +245,6 @@ F 3 "~" H 5900 3300 50  0001 C CNN
 	1    5900 3300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4875 3225 4550 3225
-Wire Wire Line
-	4450 3375 4550 3375
 Wire Wire Line
 	5075 3375 5225 3375
 Wire Wire Line
@@ -408,83 +382,6 @@ Wire Wire Line
 Wire Wire Line
 	5425 3100 5425 3050
 $Comp
-L Connector:TestPoint TP3
-U 1 1 5CB1F570
-P 5225 3025
-F 0 "TP3" H 5200 3225 50  0000 L CNN
-F 1 "TestPoint" H 5100 3275 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 5425 3025 50  0001 C CNN
-F 3 "~" H 5425 3025 50  0001 C CNN
-	1    5225 3025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5CB1F7A2
-P 5225 3550
-F 0 "TP4" H 5200 3750 50  0000 L CNN
-F 1 "TestPoint" H 5100 3800 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 5425 3550 50  0001 C CNN
-F 3 "~" H 5425 3550 50  0001 C CNN
-	1    5225 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5CB1F808
-P 6275 3550
-F 0 "TP7" H 6250 3750 50  0000 L CNN
-F 1 "TestPoint" H 6150 3800 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 6475 3550 50  0001 C CNN
-F 3 "~" H 6475 3550 50  0001 C CNN
-	1    6275 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5CB1F8B0
-P 6275 3050
-F 0 "TP6" H 6250 3250 50  0000 L CNN
-F 1 "TestPoint" H 6150 3300 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 6475 3050 50  0001 C CNN
-F 3 "~" H 6475 3050 50  0001 C CNN
-	1    6275 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6275 3050 6275 3100
-Wire Wire Line
-	6275 3550 6275 3500
-Wire Wire Line
-	5225 3550 5225 3500
-Connection ~ 5225 3500
-Wire Wire Line
-	5225 3025 5225 3100
-Connection ~ 5225 3100
-Wire Wire Line
-	4550 3100 4550 3225
-Connection ~ 4550 3225
-Wire Wire Line
-	4550 3225 4450 3225
-Wire Wire Line
-	4550 3475 4550 3375
-Connection ~ 4550 3375
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5CB23C57
-P 8550 3225
-F 0 "TP8" H 8525 3425 50  0000 L CNN
-F 1 "TestPoint" H 8425 3475 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-101-X-XX_1x01" H 8750 3225 50  0001 C CNN
-F 3 "~" H 8750 3225 50  0001 C CNN
-	1    8550 3225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 3225 8550 3300
-Wire Wire Line
-	8550 3300 8425 3300
-$Comp
 L power:+12V #PWR0119
 U 1 1 5CB25A0C
 P 8025 2750
@@ -573,42 +470,6 @@ Connection ~ 8025 3725
 Wire Wire Line
 	8025 3725 8025 3600
 $Comp
-L Device:Jumper_NC_Dual JP3
-U 1 1 5CB2D9FA
-P 7250 5925
-F 0 "JP3" V 7204 6026 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 7295 6026 50  0000 L CNN
-F 2 "Connectors_Samtec:SL-103-X-XX_1x03" H 7250 5925 50  0001 C CNN
-F 3 "~" H 7250 5925 50  0001 C CNN
-	1    7250 5925
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GNDA #PWR0123
-U 1 1 5CB2EFC4
-P 7250 6225
-F 0 "#PWR0123" H 7250 5975 50  0001 C CNN
-F 1 "GNDA" H 7255 6052 50  0000 C CNN
-F 2 "" H 7250 6225 50  0001 C CNN
-F 3 "" H 7250 6225 50  0001 C CNN
-	1    7250 6225
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 6225 7250 6175
-$Comp
-L Amplifier_Operational:OPA2134 U1
-U 1 1 5CB305E2
-P 5925 5425
-F 0 "U1" H 5925 5792 50  0000 C CNN
-F 1 "OPA2209" H 6075 5625 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5925 5425 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 5925 5425 50  0001 C CNN
-F 4 "Farnell: 1862577" H 5925 5425 50  0001 C CNN "supplier"
-	1    5925 5425
-	1    0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Operational:OPA2134 U1
 U 2 1 5CB30703
 P 1400 5225
@@ -630,90 +491,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 1600 5225 50  0001 C CNN
 	3    1600 5225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6225 5425 6375 5425
-Wire Wire Line
-	7250 5425 7250 5675
-Wire Wire Line
-	6375 5425 6375 5750
-Wire Wire Line
-	6375 5750 5525 5750
-Wire Wire Line
-	5525 5750 5525 5525
-Wire Wire Line
-	5525 5525 5625 5525
-Connection ~ 6375 5425
-Wire Wire Line
-	6375 5425 7250 5425
-$Comp
-L Device:R R6
-U 1 1 5CB35103
-P 5075 5150
-F 0 "R6" V 5075 5150 50  0000 C CNN
-F 1 "R" V 5175 5150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5005 5150 50  0001 C CNN
-F 3 "~" H 5075 5150 50  0001 C CNN
-	1    5075 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5CB35337
-P 5075 5500
-F 0 "R7" V 5075 5500 50  0000 C CNN
-F 1 "R" V 5175 5500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5005 5500 50  0001 C CNN
-F 3 "~" H 5075 5500 50  0001 C CNN
-	1    5075 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 5CB36BBF
-P 5350 5500
-F 0 "C14" H 5375 5425 50  0000 L CNN
-F 1 "100nF" V 5400 5575 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5388 5350 50  0001 C CNN
-F 3 "~" H 5350 5500 50  0001 C CNN
-	1    5350 5500
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GNDA #PWR0124
-U 1 1 5CB3CD97
-P 5200 5775
-F 0 "#PWR0124" H 5200 5525 50  0001 C CNN
-F 1 "GNDA" H 5200 5650 50  0000 C CNN
-F 2 "" H 5200 5775 50  0001 C CNN
-F 3 "" H 5200 5775 50  0001 C CNN
-	1    5200 5775
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 5650 5350 5725
-Wire Wire Line
-	5350 5725 5200 5725
-Wire Wire Line
-	5200 5725 5200 5775
-Wire Wire Line
-	5200 5725 5075 5725
-Wire Wire Line
-	5075 5725 5075 5650
-Connection ~ 5200 5725
-Wire Wire Line
-	5075 5300 5075 5325
-Wire Wire Line
-	5075 5325 5350 5325
-Connection ~ 5075 5325
-Wire Wire Line
-	5075 5325 5075 5350
-Wire Wire Line
-	5350 5350 5350 5325
-Connection ~ 5350 5325
-Wire Wire Line
-	5350 5325 5625 5325
-Wire Wire Line
-	5075 4925 5075 5000
 $Comp
 L power:+12V #PWR0126
 U 1 1 5CB47623
@@ -828,11 +605,6 @@ F 3 "" H 10225 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10225 3400 10425 3400
-Wire Wire Line
-	8125 3725 8125 5925
-Connection ~ 8125 3725
-Wire Wire Line
-	7350 5925 8125 5925
 $Comp
 L Amplifier_Instrumentation:INA128 U4
 U 1 1 5CB11A08
@@ -845,27 +617,6 @@ F 4 "Farnell: 1206896" H 8025 3300 50  0001 C CNN "supplier"
 	1    8025 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP4
-U 1 1 5CB2ACD6
-P 7325 2625
-F 0 "JP4" H 7275 2775 50  0000 L CNN
-F 1 "Jumper" V 7370 2752 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-102-X-XX_1x02" H 7325 2625 50  0001 C CNN
-F 3 "~" H 7325 2625 50  0001 C CNN
-	1    7325 2625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7625 3450 7625 3400
-Wire Wire Line
-	7625 3400 7725 3400
-Wire Wire Line
-	6275 3100 5900 3100
-Wire Wire Line
-	5900 3500 6275 3500
-Connection ~ 6275 3100
-Connection ~ 6275 3500
 $Comp
 L Device:C C20
 U 1 1 5CB408D2
@@ -913,7 +664,7 @@ $EndComp
 Wire Wire Line
 	9125 3725 9125 3625
 Wire Wire Line
-	8125 3725 9125 3725
+	8125 3725 8275 3725
 Wire Wire Line
 	9125 3725 9525 3725
 Wire Wire Line
@@ -940,106 +691,17 @@ Wire Wire Line
 Connection ~ 9125 3300
 Wire Wire Line
 	9125 3300 9075 3300
-Wire Wire Line
-	8775 3300 8550 3300
-Connection ~ 8550 3300
-$Comp
-L Device:R R15
-U 1 1 5CB638FD
-P 7325 3275
-F 0 "R15" V 7325 3275 50  0000 C CNN
-F 1 "2.61k" V 7400 3275 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7255 3275 50  0001 C CNN
-F 3 "~" H 7325 3275 50  0001 C CNN
-	1    7325 3275
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5CB63A3B
-P 7075 3275
-F 0 "R14" V 7075 3275 50  0000 C CNN
-F 1 "249" V 7150 3275 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7005 3275 50  0001 C CNN
-F 3 "~" H 7075 3275 50  0001 C CNN
-	1    7075 3275
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Jumper JP2
-U 1 1 5CB63E92
-P 7075 2625
-F 0 "JP2" H 7025 2775 50  0000 L CNN
-F 1 "Jumper" V 7120 2752 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-102-X-XX_1x02" H 7075 2625 50  0001 C CNN
-F 3 "~" H 7075 2625 50  0001 C CNN
-	1    7075 2625
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5CB63F9A
-P 6825 2625
-F 0 "JP1" H 6775 2775 50  0000 L CNN
-F 1 "Jumper" V 6870 2752 50  0001 L CNN
-F 2 "Connectors_Samtec:SL-102-X-XX_1x02" H 6825 2625 50  0001 C CNN
-F 3 "~" H 6825 2625 50  0001 C CNN
-	1    6825 2625
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R13
 U 1 1 5CB6B681
-P 6825 3275
-F 0 "R13" V 6825 3275 50  0000 C CNN
-F 1 "49.9" V 6900 3275 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6755 3275 50  0001 C CNN
-F 3 "~" H 6825 3275 50  0001 C CNN
-	1    6825 3275
+P 7550 3300
+F 0 "R13" V 7550 3300 50  0000 C CNN
+F 1 "49.9" V 7625 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7480 3300 50  0001 C CNN
+F 3 "~" H 7550 3300 50  0001 C CNN
+	1    7550 3300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6275 3500 7725 3500
-Wire Wire Line
-	7625 3450 7325 3450
-Wire Wire Line
-	6825 3450 6825 3425
-Wire Wire Line
-	7075 3425 7075 3450
-Connection ~ 7075 3450
-Wire Wire Line
-	7075 3450 6825 3450
-Wire Wire Line
-	7325 3425 7325 3450
-Connection ~ 7325 3450
-Wire Wire Line
-	7325 3450 7075 3450
-Wire Wire Line
-	6275 3100 7725 3100
-Wire Wire Line
-	6825 3125 6825 2925
-Wire Wire Line
-	7075 2925 7075 3125
-Wire Wire Line
-	7325 3125 7325 2925
-Wire Wire Line
-	6825 2325 6825 2250
-Wire Wire Line
-	6825 2250 7075 2250
-Wire Wire Line
-	7600 2250 7600 3200
-Wire Wire Line
-	7600 3200 7725 3200
-Wire Wire Line
-	7075 2325 7075 2250
-Connection ~ 7075 2250
-Wire Wire Line
-	7075 2250 7325 2250
-Wire Wire Line
-	7325 2325 7325 2250
-Connection ~ 7325 2250
-Wire Wire Line
-	7325 2250 7600 2250
 Wire Wire Line
 	2875 3225 2725 3225
 Connection ~ 2875 3225
@@ -1404,49 +1066,9 @@ F 3 "~" H 5275 1200 50  0001 C CNN
 	1    5075 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR0108
-U 1 1 5CB44568
-P 5075 4925
-F 0 "#PWR0108" H 5075 4775 50  0001 C CNN
-F 1 "+12V" H 5090 5098 50  0000 C CNN
-F 2 "" H 5075 4925 50  0001 C CNN
-F 3 "" H 5075 4925 50  0001 C CNN
-	1    5075 4925
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5075 1200 5075 1275
 Connection ~ 5075 1275
-$Comp
-L Device:R_POT RV2
-U 1 1 5CB77BE5
-P 4725 5525
-F 0 "RV2" H 4655 5571 50  0000 R CNN
-F 1 "R_POT" H 4655 5480 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 4725 5525 50  0001 C CNN
-F 3 "~" H 4725 5525 50  0001 C CNN
-	1    4725 5525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5075 5725 4925 5725
-Wire Wire Line
-	4725 5725 4725 5675
-Connection ~ 5075 5725
-Wire Wire Line
-	4875 5525 4925 5525
-Wire Wire Line
-	4925 5525 4925 5725
-Connection ~ 4925 5725
-Wire Wire Line
-	4925 5725 4725 5725
-Wire Wire Line
-	5075 5325 4725 5325
-Wire Wire Line
-	4725 5325 4725 5375
-Wire Wire Line
-	4550 3375 4775 3375
 $Comp
 L hmc1001:HMC1001 U2
 U 1 1 5CB44C8E
@@ -1469,4 +1091,78 @@ F 3 "" H 3375 3150 50  0001 C CNN
 	1    3375 3150
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 5CB4D30B
+P 8275 3825
+F 0 "#PWR0108" H 8275 3575 50  0001 C CNN
+F 1 "GNDA" H 8280 3652 50  0000 C CNN
+F 2 "" H 8275 3825 50  0001 C CNN
+F 3 "" H 8275 3825 50  0001 C CNN
+	1    8275 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 3825 8275 3725
+Connection ~ 8275 3725
+Wire Wire Line
+	8275 3725 9125 3725
+Wire Wire Line
+	7550 3450 7675 3450
+Wire Wire Line
+	7675 3450 7675 3400
+Wire Wire Line
+	7675 3400 7725 3400
+Wire Wire Line
+	7725 3200 7650 3200
+Wire Wire Line
+	7650 3200 7650 3150
+Wire Wire Line
+	7650 3150 7550 3150
+Wire Wire Line
+	5900 3100 7725 3100
+Wire Wire Line
+	5900 3500 7725 3500
+Wire Wire Line
+	4450 3225 4875 3225
+Wire Wire Line
+	4450 3375 4775 3375
+$Comp
+L Amplifier_Operational:OPA2134 U1
+U 1 1 5CB6923E
+P 4100 5325
+F 0 "U1" H 3875 5625 50  0000 C CNN
+F 1 "OPA2209" H 3800 5775 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4100 5325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 4100 5325 50  0001 C CNN
+	1    4100 5325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0110
+U 1 1 5CB693EF
+P 4575 5625
+F 0 "#PWR0110" H 4575 5375 50  0001 C CNN
+F 1 "GNDA" H 4580 5452 50  0000 C CNN
+F 2 "" H 4575 5625 50  0001 C CNN
+F 3 "" H 4575 5625 50  0001 C CNN
+	1    4575 5625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4575 5225 4400 5225
+Wire Wire Line
+	3800 5325 3675 5325
+Wire Wire Line
+	3675 5325 3675 5575
+Wire Wire Line
+	3675 5575 4475 5575
+Wire Wire Line
+	4475 5575 4475 5425
+Wire Wire Line
+	4475 5425 4400 5425
+Wire Wire Line
+	4575 5225 4575 5625
+Wire Wire Line
+	8425 3300 8775 3300
 $EndSCHEMATC
